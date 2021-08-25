@@ -1,0 +1,16 @@
+import insert from './insert-interval';
+
+test('Insert intervals test 1', () => {
+  expect(
+    insert(
+      [
+        [1, 3],
+        [6, 9],
+      ],
+      [2, 5],
+    ),
+  ).toBe([
+    [1, 5],
+    [6, 9],
+  ]);
+});
