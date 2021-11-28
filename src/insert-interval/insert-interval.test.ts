@@ -9,7 +9,7 @@ test('Insert intervals test 1', () => {
       ],
       [2, 5],
     ),
-  ).toBe([
+  ).toEqual([
     [1, 5],
     [6, 9],
   ]);
