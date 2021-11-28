@@ -1,5 +1,6 @@
 export default function productExceptSelf(numbers: number[]): number[] {
   const productOfAll = calculateProduct(numbers);
+
   return numbers.map((item, index) => {
     if (item === 0) {
       return calculateProduct([
@@ -8,16 +9,10 @@ export default function productExceptSelf(numbers: number[]): number[] {
       ]);
     }
 
-    const result = productOfAll / item;
-
-    return isZero(productOfAll) ? Math.abs(result) : result;
+    return productOfAll === 0 ? 0 : productOfAll / item;
   });
 }
 
 export function calculateProduct(numbers: number[]): number {
   return numbers.reduce((acc, curr) => (acc *= curr), 1);
-}
-
-export function isZero(num: number): boolean {
-  return Object.is(num, 0) || Object.is(num, -0);
 }

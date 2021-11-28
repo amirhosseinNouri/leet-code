@@ -1,6 +1,5 @@
 import productExceptSelf, {
   calculateProduct,
-  isZero,
 } from './product-of-array-except-self';
 
 test('Calculate product with no zero element', () => {
@@ -20,18 +19,6 @@ test('Array with zero element', () => {
 
 test('Array with zero and negative elements', () => {
   expect(productExceptSelf([-1, 1, 0, -3, 3])).toEqual([0, 0, 9, 0, 0]);
-});
-
-test('Is zero for -0', () => {
-  expect(isZero(-0)).toBe(true);
-});
-
-test('Is zero for 0', () => {
-  expect(isZero(0)).toBe(true);
-});
-
-test('Is zero for other values', () => {
-  expect(isZero(4)).toBe(false);
 });
 
 test('Array without zero and with negative product of all', () => {
