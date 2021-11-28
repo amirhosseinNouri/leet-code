@@ -6,7 +6,6 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
 
 You must write an algorithm that runs in O(n) time and without using the division operation.
 
- 
 
 Example 1:
 
@@ -25,3 +24,8 @@ Constraints:
     2 <= nums.length <= 105
     -30 <= nums[i] <= 30
     The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+    
+    
+    
+ 
+ <img width="830" alt="Screen Shot 1400-09-07 at 10 27 05" src="https://user-images.githubusercontent.com/63261053/143732768-1fae2125-7828-4403-adee-3047310981cd.png">   
