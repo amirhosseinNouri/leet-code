@@ -26,6 +26,6 @@ Constraints:
     The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
     
     
-    
+## Result
  
  <img width="830" alt="Screen Shot 1400-09-07 at 10 27 05" src="https://user-images.githubusercontent.com/63261053/143732768-1fae2125-7828-4403-adee-3047310981cd.png">   
