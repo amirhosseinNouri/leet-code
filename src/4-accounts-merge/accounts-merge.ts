@@ -1,56 +1,57 @@
-type Account = {
-  name: string;
-  emails: string[];
-  isMerged: boolean;
-};
-
 interface IteratorInterface<T> {
   hasNext: () => boolean;
   next: () => T | undefined;
 }
 
 export default function accountsMerge(accounts: string[][]): string[][] {
-  const normalizedAccounts = toAccountArray(accounts);
   const merged: boolean[] = new Array(accounts.length).fill(false);
 
-  for (let i = 0; i < normalizedAccounts.length - 1; i++) {
-    const account = normalizedAccounts[i];
+  for (let i = 0; i < accounts.length - 1; i++) {
+    const [name, ...emails] = accounts[i];
 
     if (merged[i] === true) {
       continue;
     }
 
     console.log('New Round');
-    console.log({ account });
+    console.log({ name, emails });
 
-    const emailIterator = createIterator<string>(account.emails);
+    const emailIterator = createIterator<string>(emails);
 
     while (emailIterator.hasNext()) {
       const currentEmail = emailIterator.next()!;
       console.log({ currentEmail });
 
-      for (let j = i + 1; j < normalizedAccounts.length; j++) {
-        const otherAccount = normalizedAccounts[j];
+      for (let j = i + 1; j < accounts.length; j++) {
+        const [otherName, ...otherEmails] = accounts[j];
 
         if (merged[j] === true) {
           continue;
         }
 
-        console.log({ otherAccount });
+        console.log({ otherName, otherEmails });
 
-        if (otherAccount.emails.includes(currentEmail)) {
+        if (otherEmails.includes(currentEmail)) {
           console.log('COMMON');
-          account.emails.push(...otherAccount.emails);
+          console.log({ push: otherEmails });
+          emails.push(...otherEmails);
           merged[j] = true;
-          console.log({ account, otherAccount, merged });
+          console.log({ emails, otherEmails, merged });
         }
       }
+
+      accounts[i] = [name, ...emails];
     }
   }
 
-  return toStringArray(
-    normalizedAccounts.filter((_, index) => merged[index] === false),
-  );
+  console.log(accounts);
+
+  return accounts
+    .filter((_, index) => merged[index] === false)
+    .map(([name, ...emails]) => [
+      name,
+      ...sortEmailsByName(removeDuplicateEmails(emails)),
+    ]);
 }
 
 export function sortListsByLength(
@@ -80,21 +81,6 @@ export function sortEmailsByName(arr: string[]): string[] {
 
 export function removeDuplicateEmails(emails: string[]): string[] {
   return Array.from(new Set<string>(emails));
-}
-
-export function toAccountArray(accounts: string[][]): Account[] {
-  return accounts.map(([name, ...emails]) => ({
-    name,
-    emails: removeDuplicateEmails(emails),
-    isMerged: false,
-  }));
-}
-
-export function toStringArray(accounts: Account[]): string[][] {
-  return accounts.map(({ name, emails }) => [
-    name,
-    ...sortEmailsByName(removeDuplicateEmails(emails)),
-  ]);
 }
 
 function createIterator<T>(arr: T[]): IteratorInterface<T> {
