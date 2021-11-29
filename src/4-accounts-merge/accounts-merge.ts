@@ -18,8 +18,16 @@ export default function accountsMerge(accounts: string[][]): string[][] {
 
     const emailIterator = createIterator<string>(emails);
 
+    const checkedEmails = new Set<string>();
+
     while (emailIterator.hasNext()) {
       const currentEmail = emailIterator.next()!;
+
+      if (checkedEmails.has(currentEmail)) {
+        continue;
+      }
+
+      checkedEmails.add(currentEmail);
       console.log({ currentEmail });
 
       for (let j = i + 1; j < accounts.length; j++) {
