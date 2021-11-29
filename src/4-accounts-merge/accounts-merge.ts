@@ -11,11 +11,12 @@ interface IteratorInterface<T> {
 
 export default function accountsMerge(accounts: string[][]): string[][] {
   const normalizedAccounts = toAccountArray(accounts);
+  const seen: boolean[] = new Array(accounts.length).fill(false);
 
   for (let i = 0; i < normalizedAccounts.length - 1; i++) {
     const account = normalizedAccounts[i];
 
-    if (account.isMerged === true) {
+    if (seen[i] === true) {
       continue;
     }
 
@@ -26,11 +27,12 @@ export default function accountsMerge(accounts: string[][]): string[][] {
 
     while (emailIterator.hasNext()) {
       const currentEmail = emailIterator.next()!;
+      console.log({ currentEmail });
 
       for (let j = i + 1; j < normalizedAccounts.length; j++) {
         const otherAccount = normalizedAccounts[j];
 
-        if (otherAccount.isMerged === true) {
+        if (seen[j] === true) {
           continue;
         }
 
@@ -39,15 +41,15 @@ export default function accountsMerge(accounts: string[][]): string[][] {
         if (otherAccount.emails.includes(currentEmail)) {
           console.log('COMMON');
           account.emails.push(...otherAccount.emails);
-          otherAccount.isMerged = true;
-          console.log({ account, otherAccount });
+          seen[j] = true;
+          console.log({ account, otherAccount, seen });
         }
       }
     }
   }
 
   return toStringArray(
-    normalizedAccounts.filter((account) => !account.isMerged),
+    normalizedAccounts.filter((_, index) => seen[index] === false),
   );
 }
 
