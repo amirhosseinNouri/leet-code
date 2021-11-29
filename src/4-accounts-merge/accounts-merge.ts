@@ -12,7 +12,7 @@ interface IteratorInterface<T> {
 export default function accountsMerge(accounts: string[][]): string[][] {
   const normalizedAccounts = toAccountArray(accounts);
 
-  for (let i = 0; i < normalizedAccounts.length; i++) {
+  for (let i = 0; i < normalizedAccounts.length - 1; i++) {
     const account = normalizedAccounts[i];
 
     if (account.isMerged === true) {
@@ -83,7 +83,7 @@ export function removeDuplicateEmails(emails: string[]): string[] {
 export function toAccountArray(accounts: string[][]): Account[] {
   return accounts.map(([name, ...emails]) => ({
     name,
-    emails: sortEmailsByName(removeDuplicateEmails(emails)),
+    emails: removeDuplicateEmails(emails),
     isMerged: false,
   }));
 }
