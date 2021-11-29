@@ -33,3 +33,11 @@ Constraints:
     accounts[i][0] consists of English letters.
     accounts[i][j] (for j > 0) is a valid email.
 
+
+## Result
+
+<img width="808" alt="Screen Shot 1400-09-08 at 18 06 06" src="https://user-images.githubusercontent.com/63261053/143886971-8bc29db5-3d10-438c-92b0-81b8ac6d000f.png">
+
+
+
+
