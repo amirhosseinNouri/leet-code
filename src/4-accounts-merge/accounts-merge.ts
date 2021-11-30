@@ -13,9 +13,6 @@ export default function accountsMerge(accounts: string[][]): string[][] {
       continue;
     }
 
-    console.log('New Round');
-    console.log({ name, emails });
-
     const emailIterator = createIterator<string>(emails);
 
     const checkedEmails = new Set<string>();
@@ -28,7 +25,6 @@ export default function accountsMerge(accounts: string[][]): string[][] {
       }
 
       checkedEmails.add(currentEmail);
-      console.log({ currentEmail });
 
       for (let j = i + 1; j < accounts.length; j++) {
         const [otherName, ...otherEmails] = accounts[j];
@@ -37,22 +33,15 @@ export default function accountsMerge(accounts: string[][]): string[][] {
           continue;
         }
 
-        console.log({ otherName, otherEmails });
-
         if (otherEmails.includes(currentEmail)) {
-          console.log('COMMON');
-          console.log({ push: otherEmails });
           emails.push(...otherEmails);
           merged[j] = true;
-          console.log({ emails, otherEmails, merged });
         }
       }
 
       accounts[i] = [name, ...emails];
     }
   }
-
-  console.log(accounts);
 
   return accounts
     .filter((_, index) => merged[index] === false)
