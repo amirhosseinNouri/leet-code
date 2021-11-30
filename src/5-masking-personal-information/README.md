@@ -74,3 +74,9 @@ Constraints:
     If s is a phone number:
         10 <= s.length <= 20
         s consists of digits, spaces, and the symbols '(', ')', '-', and '+'.
+        
+        
+## Result
+<img width="879" alt="Screen Shot 1400-09-10 at 01 19 30" src="https://user-images.githubusercontent.com/63261053/144133478-02764dc3-2d67-4046-a51b-a3f93d105d37.png">
+
+
