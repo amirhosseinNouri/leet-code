@@ -25,3 +25,7 @@ Constraints:
     The number of nodes in each linked list is in the range [1, 100].
     0 <= Node.val <= 9
     It is guaranteed that the list represents a number that does not have leading zeros.
+
+
+## Result 
+<img width="787" alt="Screen Shot 1400-09-11 at 15 12 56" src="https://user-images.githubusercontent.com/63261053/144416105-7f5ac23a-27c0-429e-8f43-b10bb53ff948.png">
