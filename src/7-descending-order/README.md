@@ -8,3 +8,6 @@ Input: 42145 Output: 54421
 Input: 145263 Output: 654321
 
 Input: 123456789 Output: 987654321
+
+## Result
+<img width="689" alt="Screen Shot 1400-09-12 at 23 35 39" src="https://user-images.githubusercontent.com/63261053/144666040-ee493b44-ba75-4263-ad93-78c07d9f1ef9.png">
