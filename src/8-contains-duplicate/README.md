@@ -20,3 +20,7 @@ Constraints:
 1 <= nums.length <= 105
 -109 <= nums[i] <= 109
 0 <= k <= 105
+
+
+## Result
+<img width="728" alt="Screen Shot 1401-02-17 at 16 51 18" src="https://user-images.githubusercontent.com/63261053/167254212-b638324a-150d-4849-952b-2a573c0aaa66.png">
