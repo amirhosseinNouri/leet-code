@@ -22,3 +22,8 @@ Example 3:
 Input: x = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+
+## Result
+
+<img width="874" alt="Screen Shot 1401-04-13 at 20 18 14" src="https://user-images.githubusercontent.com/63261053/177187229-47072954-ece6-4702-b79d-568834683234.png">
