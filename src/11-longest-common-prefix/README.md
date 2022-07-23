@@ -25,3 +25,4 @@ Constraints:
 strs[i] consists of only lowercase English letters.
 
 ## Result
+<img width="817" alt="Screen Shot 1401-05-01 at 18 12 46" src="https://user-images.githubusercontent.com/63261053/180607629-3521e664-5ec7-4c4f-9157-13eef35c7adc.png">
