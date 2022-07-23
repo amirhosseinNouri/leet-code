@@ -26,3 +26,7 @@ Constraints:
 
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
+
+## Result
+
+![Screen Shot 1401-05-01 at 23 51 45](https://user-images.githubusercontent.com/63261053/180619890-14327eea-6cab-492a-af15-5b2c34700eb4.png)
