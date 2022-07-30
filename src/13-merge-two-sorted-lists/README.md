@@ -31,4 +31,6 @@ Both list1 and list2 are sorted in non-decreasing order.
 
 
 ## Result
+![Screen Shot 1401-05-08 at 12 27 30](https://user-images.githubusercontent.com/63261053/181884276-6c6e8ba4-e0fe-4da5-9700-3347986b18e5.png)
+
 
