@@ -32,4 +32,5 @@ words[i] and s consist of only lowercase English letters.
 
 ## Results
 
-![Screenshot 1402-01-11 at 19.21.14.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F64%2Fz8w_yr494qd146h4x00b00sm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_ywLgpq%2FScreenshot%201402-01-11%20at%2019.21.14.png)
+<img width="725" alt="Screenshot 1402-01-11 at 19 27 23" src="https://user-images.githubusercontent.com/63261053/229170759-c9dabf00-aafb-49a9-a975-14c66e94707c.png">
+
