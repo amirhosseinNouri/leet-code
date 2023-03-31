@@ -24,4 +24,5 @@ All the characters of jewels are unique.
 
 ## Results
 
-![Screenshot 1402-01-11 at 18.56.48.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2F64%2Fz8w_yr494qd146h4x00b00sm0000gn%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_UbcicC%2FScreenshot%201402-01-11%20at%2018.56.48.png)
+<img width="729" alt="Screenshot 1402-01-11 at 19 26 35" src="https://user-images.githubusercontent.com/63261053/229170588-24b170f6-7dde-4897-b5ea-47d4de7b99f0.png">
+
