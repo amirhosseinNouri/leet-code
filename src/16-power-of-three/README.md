@@ -25,3 +25,9 @@ Explanation: There is no x where 3x = (-1).
 Constraints:
 
 -231 <= n <= 231 - 1
+
+## Results
+
+<img width="737" alt="Screenshot 1402-01-15 at 00 37 51" src="https://user-images.githubusercontent.com/63261053/229627874-b9229a53-a58d-4176-9267-00ec5282fa89.png">
+
+
