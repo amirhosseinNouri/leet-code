@@ -22,3 +22,5 @@ The number of nodes in the tree is in the range [1, 1000].
 
 
 ## Result
+
+![Screenshot 1402-01-20 at 06 47 23](https://user-images.githubusercontent.com/63261053/230752278-b618a914-449e-47b9-b8c6-3e26010f405a.png)
