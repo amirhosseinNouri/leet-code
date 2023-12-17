@@ -28,3 +28,5 @@ Constraints:
 Only one valid answer exists.
 
 ## Results
+
+<img width="724" alt="Screenshot 1402-09-26 at 2 56 36 in the afternoon" src="https://github.com/amirhosseinNouri/leet-code/assets/63261053/7ec31b05-6e2b-4c03-9398-0e8262781578">
