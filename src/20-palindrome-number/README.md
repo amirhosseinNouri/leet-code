@@ -25,3 +25,6 @@ Constraints:
 -231 <= x <= 231 - 1
 
 ## Results
+
+![Screenshot 1402-09-27 at 12 30 36 in the afternoon](https://github.com/amirhosseinNouri/leet-code/assets/63261053/ea3217b3-2da6-4c5c-ae31-5744cf8cc96b)
+
