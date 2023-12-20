@@ -21,3 +21,4 @@ Constraints:
 strs[i] consists of only lowercase English letters.
 
 ## Result
+![Screenshot 1402-09-29 at 11 57 18 in the morning](https://github.com/amirhosseinNouri/leet-code/assets/63261053/27c0fde3-f647-499b-8eab-0ed682069324)
