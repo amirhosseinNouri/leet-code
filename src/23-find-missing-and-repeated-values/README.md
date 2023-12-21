@@ -21,6 +21,7 @@ Constraints:
 1 <= grid[i][j] <= n _ n
 For all x that 1 <= x <= n _ n there is exactly one x that is not equal to any of the grid members.
 For all x that 1 <= x <= n _ n there is exactly one x that is equal to exactly two of the grid members.
-For all x that 1 <= x <= n _ n except two of them there is exatly one pair of i, j that 0 <= i, j <= n - 1 and grid[i][j] == x.
+For all x that 1 <= x <= n _ n except two of them there is exactly one pair of i, j that 0 <= i, j <= n - 1 and grid[i][j] == x.
 
 ## Results
+![Screenshot 1402-09-30 at 7 05 46 in the evening](https://github.com/amirhosseinNouri/leet-code/assets/63261053/f648308d-c362-4c61-830d-f1edcbf7e1f6)
