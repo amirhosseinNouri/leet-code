@@ -31,3 +31,5 @@ Constraints:
 1 <= mountain[i] <= 100
 
 ## Results
+![Screenshot 1402-10-01 at 10 38 12 in the morning](https://github.com/amirhosseinNouri/leet-code/assets/63261053/0b291848-ec7a-4686-9e2b-f0ec61b101ec)
+
