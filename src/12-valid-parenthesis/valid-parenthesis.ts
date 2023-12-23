@@ -4,28 +4,29 @@ function isValid(s: string): boolean {
   for (let i = 0; i < s.length; i++) {
     const currentCharacter = s[i];
 
-    if (isClosing(currentCharacter)) {
-      if (stack.length === 0) {
-        console.log('nothing to pop. returning false');
-        return false;
-      }
-
-      const topCharacter = getLastItem<string>(stack);
-
-      if (arePairs(currentCharacter, topCharacter)) {
-        stack.pop();
-      } else {
-        return false;
-      }
-    } else {
+    if (isOpening(currentCharacter)) {
       stack.push(currentCharacter);
+      continue;
+    }
+
+    // Closing character
+    if (stack.length === 0) {
+      return false;
+    }
+
+    const topCharacter = getLastItem(stack);
+
+    if (arePairs(currentCharacter, topCharacter)) {
+      stack.pop();
+    } else {
+      return false;
     }
   }
   return stack.length === 0;
 }
 
-function isClosing(character: string): boolean {
-  return [')', ']', '}'].includes(character);
+function isOpening(character: string): boolean {
+  return ['(', '[', '{'].includes(character);
 }
 
 function getLastItem<T>(array: Array<T>): T {
