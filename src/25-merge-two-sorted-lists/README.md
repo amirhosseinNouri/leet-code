@@ -26,3 +26,4 @@ The number of nodes in both lists is in the range [0, 50].
 Both list1 and list2 are sorted in non-decreasing order.
 
 ## Result
+![Screenshot 1402-10-03 at 11 14 27 in the morning](https://github.com/amirhosseinNouri/leet-code/assets/63261053/fca00146-2b63-4415-86cd-844152e3ab91)
