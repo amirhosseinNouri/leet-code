@@ -45,3 +45,5 @@ Constraints:
 0 <= val <= 100
 
 ## Results
+![Screenshot 1402-10-05 at 1 02 59 in the afternoon](https://github.com/amirhosseinNouri/leet-code/assets/63261053/13766d4c-3e46-493b-8b89-fe540b29f705)
+
