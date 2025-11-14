@@ -3,13 +3,18 @@ function isAnagram(s: string, t: string): boolean {
     return false;
   }
 
-  const sChars = s.split('').sort();
-  const tCharts = t.split('').sort();
+  const map = new Map<string, number>();
 
-  for (let i = 0; i < s.length; i++) {
-    if (sChars[i] !== tCharts[i]) {
+  for (const char of s) {
+    map.set(char, (map.get(char) || 0) + 1);
+  }
+
+  for (const char of t) {
+    const currentCount = map.get(char);
+    if (!currentCount) {
       return false;
     }
+    map.set(char, currentCount - 1);
   }
 
   return true;
