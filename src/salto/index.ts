@@ -90,6 +90,8 @@ export default function debounce(
     } else {
       clearTimeout(timer);
       timer = setTimeout(() => func.apply(this, args), wait);
+      const flush = () => func.apply(this, args);
+      Object.assign(debounced, { flush });
     }
   };
 
@@ -105,8 +107,7 @@ const debouncedHi = debounce(hi, 100);
 debouncedHi();
 debouncedHi();
 debouncedHi();
-debouncedHi();
-debouncedHi();
+debouncedHi.flush();
 debouncedHi.cancel();
 debouncedHi();
 debouncedHi();
